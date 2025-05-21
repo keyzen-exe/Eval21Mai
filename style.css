@@ -1,51 +1,523 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 
-*{
-    padding: 0;
+
+
+/* Reset */
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
-
-.container{
-        max-width: 1500px;
-        margin: auto;
-}
-
-.align-center{
-    align-items: center;
-    
-}
-
-header{
     font-family: "Open Sans", sans-serif;
-    border: solid 2px #33664F;
-    background-color: #FAF6E9;
-    border-radius: 70px;
-    height: 70px;
-    position:sticky;
-    z-index: 999;
+}
+
+
+/*--------------------------------------------------
+🤓 Material Icons
+----------------------------------------------------*/
+
+.material-icons,
+.material-icons-outlined,
+.material-icons-filled,
+.material-icons-rounded,
+.material-icons-shar,
+.material-icons-two-tone {
+    vertical-align: text-top;
+    color: currentColor;
+    font-size: inherit;
+    display: inline-block;
+
+}
+
+.btn .material-icons,
+.btn .material-icons-outlined,
+.btn .material-icons-filled,
+.btn .material-icons-rounded,
+.btn .material-icons-shar,
+.btn .material-icons-two-tone {
+    margin-right: 8px;
+
+}
+
+/*--------------------------------------------------
+🤖 Variables
+----------------------------------------------------*/
+:root {
+    --gap: 32px;
+    --gap10: 10px;
+    --primary: #111;
+    --secondary: #FAF6E9;
+    --black: #000;
+    --white: #fff;
+    --grey: #636363;
+    --light-grey: #aaa;
+    --darkGreen: #33664F
+}
+
+/*--------------------------------------------------
+📦Container et responsive
+---------------------------------------------------*/
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-1000 {
+    max-width: 1000px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /*vous pouvez enlever le padding si il vous gene*/
+    padding: 16px;
+}
+
+.responsive {
+    /*Les images doivent d'adapter a leur parents*/
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* jouez sur ces proprietés pour recadrer / agrandir l'image */
+    object-position: center;
+}
+
+
+/*--------------------------------------------------
+🪄 Mise en page flex
+---------------------------------------------------*/
+.flex {
     display: flex;
-    gap: 16px;
+    flex-wrap: wrap;
 }
 
-.margin20{
-    margin-top: 20px;
+.reverse {
+    flex-direction: row-reverse;
 }
 
-.logoHeader{
-    
+.justify-between {
+    justify-content: space-between;
 }
 
-a{
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.alternate>div:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.gap {
+    gap: var(--gap);
+}
+
+.gap10 {
+    gap: var(--gap10)
+}
+
+.flexEnd {
+    justify-content: flex-end;
+}
+
+
+/*--------------------------------------------------
+🧱Largeurs et colonnes
+---------------------------------------------------*/
+
+/*Generation des classes pour la largeur des colonnes selon 
+les resolutions d'ecrans d'apres un petit script sass*/
+
+/*Desktop*/
+.large-1 {
+    width: calc(8.3333333333% - 11 * var(--gap) / 12);
+}
+
+.large-2 {
+    width: calc(16.6666666667% - 5 * var(--gap) / 6);
+}
+
+.large-3 {
+    width: calc(25% - 3 * var(--gap) / 4);
+}
+
+.large-4 {
+    width: calc(33.3333333333% - 2 * var(--gap) / 3);
+}
+
+.large-5 {
+    width: calc(41.6666666667% - 1.4 * var(--gap) / 2.4);
+}
+
+.large-6 {
+    width: calc(50% - 1 * var(--gap) / 2);
+}
+
+.large-7 {
+    width: calc(58.3333333333% - 0.7142857143 * var(--gap) / 1.7142857143);
+}
+
+.large-8 {
+    width: calc(66.6666666667% - 0.5 * var(--gap) / 1.5);
+}
+
+.large-9 {
+    width: calc(75% - 0.3333333333 * var(--gap) / 1.3333333333);
+}
+
+.large-10 {
+    width: calc(83.3333333333% - 0.2 * var(--gap) / 1.2);
+}
+
+.large-11 {
+    width: calc(91.6666666667% - 0.0909090909 * var(--gap) / 1.0909090909);
+}
+
+.large-12 {
+    width: calc(100% - 0 * var(--gap) / 1);
+}
+
+/*Tablets*/
+@media all and (max-width: 700px) {
+    .medium-1 {
+        width: calc(8.3333333333% - 11 * var(--gap) / 12);
+    }
+
+    .medium-2 {
+        width: calc(16.6666666667% - 5 * var(--gap) / 6);
+    }
+
+    .medium-3 {
+        width: calc(25% - 3 * var(--gap) / 4);
+    }
+
+    .medium-4 {
+        width: calc(33.3333333333% - 2 * var(--gap) / 3);
+    }
+
+    .medium-5 {
+        width: calc(41.6666666667% - 1.4 * var(--gap) / 2.4);
+    }
+
+    .medium-6 {
+        width: calc(50% - 1 * var(--gap) / 2);
+    }
+
+    .medium-7 {
+        width: calc(58.3333333333% - 0.7142857143 * var(--gap) / 1.7142857143);
+    }
+
+    .medium-8 {
+        width: calc(66.6666666667% - 0.5 * var(--gap) / 1.5);
+    }
+
+    .medium-9 {
+        width: calc(75% - 0.3333333333 * var(--gap) / 1.3333333333);
+    }
+
+    .medium-10 {
+        width: calc(83.3333333333% - 0.2 * var(--gap) / 1.2);
+    }
+
+    .medium-11 {
+        width: calc(91.6666666667% - 0.0909090909 * var(--gap) / 1.0909090909);
+    }
+
+    .medium-12 {
+        width: calc(100% - 0 * var(--gap) / 1);
+    }
+}
+
+/*Smartphones*/
+@media all and (max-width: 440px) {
+    .small-1 {
+        width: calc(8.3333333333% - 11 * var(--gap) / 12);
+    }
+
+    .small-2 {
+        width: calc(16.6666666667% - 5 * var(--gap) / 6);
+    }
+
+    .small-3 {
+        width: calc(25% - 3 * var(--gap) / 4);
+    }
+
+    .small-4 {
+        width: calc(33.3333333333% - 2 * var(--gap) / 3);
+    }
+
+    .small-5 {
+        width: calc(41.6666666667% - 1.4 * var(--gap) / 2.4);
+    }
+
+    .small-6 {
+        width: calc(50% - 1 * var(--gap) / 2);
+    }
+
+    .small-7 {
+        width: calc(58.3333333333% - 0.7142857143 * var(--gap) / 1.7142857143);
+    }
+
+    .small-8 {
+        width: calc(66.6666666667% - 0.5 * var(--gap) / 1.5);
+    }
+
+    .small-9 {
+        width: calc(75% - 0.3333333333 * var(--gap) / 1.3333333333);
+    }
+
+    .small-10 {
+        width: calc(83.3333333333% - 0.2 * var(--gap) / 1.2);
+    }
+
+    .small-11 {
+        width: calc(91.6666666667% - 0.0909090909 * var(--gap) / 1.0909090909);
+    }
+
+    .small-12 {
+        width: calc(100% - 0 * var(--gap) / 1);
+    }
+}
+
+
+/*--------------------------------------------------
+✍️ Styliser du texte
+---------------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 16px;
+
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 32px;
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+a {
+    color: var(--black);
     text-decoration: none;
-    list-style: none;
-    color: black;
-}
-
-ul{
-    list-style: none;
 }
 
 
+/*--------------------------------------------------
+✅Boutons (rajoutez les hover de vos choix 😊)
+---------------------------------------------------*/
+.btn-primary {
+    background-color: #33664F;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+}
 
+.btn-secondary {
+    width: fit-content;
+    padding: 10px;
+    color: white;
+border-radius: 0px 20px;
+background: #33664F;
+}
+
+
+
+/*--------------------------------------------------
+🎓Header
+---------------------------------------------------*/
+
+header {
+    background-color: var(--secondary);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    margin-top: 40px;
+    border-radius: 150px;
+    border: solid 2px var(--darkGreen);
+    padding: 16px 30px;
+}
+
+header nav {
+    display: flex;
+
+}
+
+header nav a {
+    color: var(--black);
+    transition: color .33s ease;
+}
+
+header a:hover {
+    color: var(--primary);
+}
+
+
+/*--------------------------------------------------
+🃏 Cards
+---------------------------------------------------*/
+.card {
+    border-radius: 8px;
+
+    h3,
+    h4,
+    .btn {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    img {
+        border-radius: 8px;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 150px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+.avis {
+
+    background-color: var(--secondary);
+    padding: 16px;
+
+    &>div {
+        --gap: 16px;
+    }
+
+    border-radius: 8px;
+
+    h4 {
+        margin: 0;
+    }
+
+    .avatar {
+        width: 64px;
+        height: 64px;
+        border-radius: 64px;
+        background-color: var(--grey);
+        padding: 8px;
+
+    }
+
+    .stars {
+        color: var(--primary);
+    }
+
+    p {
+        margin-top: 16px;
+        font-size: 14px;
+    }
+}
+
+
+
+/*--------------------------------------------------
+⛰️ backgrounds
+---------------------------------------------------*/
+.bg-grey {
+    background-color: var(--light-grey);
+}
+
+.bgred {
+    background-color: red;
+
+}
+
+
+ul {
+    list-style: none;
+    font-size: 15px;
+}
+
+
+/*--------------------------------------------------
+hero
+---------------------------------------------------*/
+.hero {
+    margin-top: 40px;
+    gap: 230px;
+}
+
+.hero-img {
+    width: 401px;
+    height: 604px;
+    border-radius: 90px 0px 90px 0px;
+
+}
+
+.hero-content {
+    width: 55%;
+    margin-top: 100px;
+}
+
+
+/*--------------------------------------------------
+bande defilante
+---------------------------------------------------*/
+.bande {
+    width: 100%;
+    height: 76px;
+    background-color: #33664F;
+    color: rgb(250, 250, 250);
+    margin-top: 50px;
+}
+
+/*--------------------------------------------------
+section des produits
+---------------------------------------------------*/
+
+
+/*--------------------------------------------------
+section avis clients
+---------------------------------------------------*/
+
+/*--------------------------------------------------
+section services
+---------------------------------------------------*/
+
+/*--------------------------------------------------
+footer
+---------------------------------------------------*/
