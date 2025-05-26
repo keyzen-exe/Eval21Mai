@@ -16,7 +16,7 @@ fetch("data.json")
   .then((response) => response.json())
   .then(data => {
 
-    console.log(data.produits);
+
     afficheProduits(data.produits);
     afficheAvis(data.temoignages);
     afficheServices(data.services);
@@ -47,32 +47,32 @@ function afficheProduits(tableauDeProduits) {
     // role afficher dans la section qui a l'id "sectionProduits"
     document.getElementById("sectionProduits").innerHTML +=
       `
-    <div class="large-3 flex gap10 cardProduit">
-                  <p class="PrixProduit">
-                    ${prix}
-                  </p>
-                <img class="large-12 imgArticle" src="${imageurl}" alt="photo d'une sneakers">
-                <div class="large-12">
-                    <div class="contentArticle">
-                        <h2>
-                            ${nom}
-                        </h2>
-                    </div>
-                    <div>
-                        <p>
-                            ${description}
-                        </p>
-                    </div>
-                    <p class="btnAcheter">Acheter
-                    </p>
-                </div>
-            </div>
+   <div class="large-3 flex gap10 cardProduit">
+    <p class="PrixProduit">
+        ${prix}
+    </p>
+    <img class="large-12 imgArticle" src="${imageurl}" alt="photo d'une sneakers">
+    <div class="large-12">
+        <div class="contentArticle">
+            <h2>
+                ${nom}
+            </h2>
+        </div>
+        <div>
+            <p>
+                ${description}
+            </p>
+        </div>
+        <a href="">
+            <p class="btnAcheter zoom-hover:hover zoom-hover">Acheter</p>
+        </a>
+    </div>
+    </div>
 `
 
   });
 
 }
-
 
 
 /*--------------------------------------------------
@@ -95,41 +95,40 @@ function afficheAvis(tableauDeProduits) {
     // role afficher dans la section qui a l'id "sectionAvis"
     document.getElementById("sectionAvis").innerHTML +=
       `
-   <div class="large-4 flex gap10 avisClient" data-aos="zoom-in" data-aos-duration="1000">
+  <div class="large-4 flex gap10 avisClient" data-aos="zoom-in" data-aos-duration="1000">
 
-                <div>
-                    <img class="imgAvis" src="${imageurl}" alt="photo d'une personne">
-                </div>
+    <div>
+        <img class="imgAvis" src="${imageurl}" alt="photo d'une personne">
+    </div>
 
-                <div>
-                    <h3>
-                        ${prenom}
-                    </h3>
-                     <h4>
-                        Experience
-                    </h4>
-                    <h4>
-                        ${typeExperience}
-                    </h4>
-                    <p>
-                        ${note}/5
-                    </p>
-                </div>
-                <div>
-                    <h3>
-                        Avis
-                    </h3>
-                    <p>
-                        “${commentaire}”
-                    </p>
-                </div>
-            </div>
+    <div>
+        <h3>
+            ${prenom}
+        </h3>
+        <h4>
+            Experience
+        </h4>
+        <h4>
+            ${typeExperience}
+        </h4>
+        <p>
+            ${note}/5
+        </p>
+    </div>
+    <div>
+        <h3>
+            Avis
+        </h3>
+        <p>
+            “${commentaire}”
+        </p>
+    </div>
+</div>
 `
 
   });
 
 }
-
 
 
 /*--------------------------------------------------
@@ -149,14 +148,14 @@ function afficheServices(tableauDeProduits) {
     // role afficher dans la section qui a l'id "sectionServices"
     document.getElementById("sectionServices").innerHTML +=
       `
-                <div data-aos="fade-up" data-aos-duration="1000">
-                    <h3>
-                        ${nom}
-                    </h3>
-                    <p>
-                        ${description}
-                    </p>
-                </div>
+<div data-aos="fade-up" data-aos-duration="1000">
+    <h3>
+        ${nom}
+    </h3>
+    <p>
+        ${description}
+    </p>
+</div>
 
 `
 
@@ -233,30 +232,40 @@ function afficheCTAphraseAccroche(phraseAccroche, texteAppelAction) {
   //// role afficher dans la section qui a l'id "hero"
   document.getElementById("sectionHero").innerHTML += `
   
-  <h1>${phraseAccroche}</h1> 
-    <div class="btn-primary">
-        <a href=""><p>${texteAppelAction}</p></a>
-          </div>
+ <h1>${phraseAccroche}</h1>
+<div class="btn-primary zoom-hover:hover zoom-hover">
+    <a href="">
+        <p>${texteAppelAction}</p>
+    </a>
+</div>
                 
   `
 };
 
 
 
-
-
-//essai input
+// role pouvoir utiliser la barre de recherche 
+// paramettre "recherche"
+// rend invisible les card n'ont pas les caractere rechercher
 const input = document.getElementById("recherche");
+
 input.addEventListener("input", () => {
   const filtre = input.value.toLowerCase();
-  const cards = document.querySelectorAll("#sectionProduits .card");
+  const cards = document.querySelectorAll("#sectionProduits .cardProduit");
 
   cards.forEach(card => {
-    const nom = card.getAttribute("data.produits");
+    const nom = card.textContent.toLowerCase();
     const visible = nom.includes(filtre);
     card.style.display = visible ? "block" : "none";
   });
 });
+
+
+
+
+
+
+
 
 
 
