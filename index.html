@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BonPied - Sneakers Éco-sourcés à Rennes</title> <!-- "nomCommercial" -->
+    <title id="Title"></title> <!-- "nomCommercial" -->
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="assets/iconNavigateur 2.svg">
@@ -59,86 +59,90 @@
 
 
         <!-- hero -->
-        <section class="container flex flexEnd hero marginT70 gap" id="hero">
+        <section class="container flex flexEnd hero marginT70 gap">
 
-            <div class="hero-content">
-                <h1>Marchez avec style tout en respectant la planète avec BonPied, votre destination de sneakers
-                    éco-sourcés à Rennes</h1> <!-- "phraseAccroche" -->
-                <div class="btn-primary">
-                    <a href="">
-                        <p>Découvrez notre collection responsable</p> <!-- "texteAppelAction" -->
-                    </a>
-                </div>
+            <div class="hero-content" id="hero">
+               
             </div>
             <img class="hero-img" src="assets/photoHero.jpeg" alt="">
+        
+        </section> 
 
-        </section>
 
 
-        <!-- Bande defilante --> <!-- "avantagesClients" -->
+            <!-- Bande defilante --> <!-- "avantagesClients" -->
 
-        <div class="bandeDefilante marginT70">
+            <div class="bandeDefilante marginT70" id="bandeDefilante">
+
+
             <div class="flexNoWrap nowrap gap50" id="deffilement">
                 <p>Designs tendance pour un style unique</p>
                 <p>Découvrez nos sneakers éco-sourcées fabriquées avec des matériaux durables</p>
                 <p>Engagement envers la durabilité et la responsabilité sociale</p>
 
-                <!-- 2 pour cycle -->
+                
                 <p>Designs tendance pour un style unique</p>
                 <p>Découvrez nos sneakers éco-sourcées fabriquées avec des matériaux durables</p>
                 <p>Engagement envers la durabilité et la responsabilité sociale</p>
             </div>
-        </div>
 
 
 
 
-
-
-        <!-- section HOMME FEMME ENFANT PERSONNALISATION -->
-
-        <section class="flex align-center marginT70 justify-between containerHF">
-
-            <div class="image-container" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000"
-                data-aos-offset="200">
-                <a href=""><img src="assets/homme.png" alt="photo d'un homme"></a>
-                <p class="image-text">HOMME</p>
             </div>
 
-            <div class="image-container" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1500"
-                data-aos-offset="200">
-                <a href=""><img src="assets/femme.png" alt="photo d'une femme"></a>
-                <p class="image-text">FEMME</p>
+
+
+
+
+
+            <!-- section HOMME FEMME ENFANT PERSONNALISATION -->
+
+            <section class="flex align-center marginT70 justify-between containerHF">
+
+                <div class="image-container" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1000" data-aos-offset="200">
+                    <a href=""><img src="assets/homme.png" alt="photo d'un homme"></a>
+                    <p class="image-text">HOMME</p>
+                </div>
+
+                <div class="image-container" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="1500" data-aos-offset="200">
+                    <a href=""><img src="assets/femme.png" alt="photo d'une femme"></a>
+                    <p class="image-text">FEMME</p>
+                </div>
+
+                <div class="image-container" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000" data-aos-offset="200">
+                    <a href=""><img src="assets/enfant.png" alt="photo d'enfant"></a>
+                    <p class="image-text">ENFANT</p>
+                </div>
+
+                <div class="image-container" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2500" data-aos-offset="200">
+                    <a href=""> <img class="maxW420" src="assets/PersoSousHero.jpg"
+                            alt="photo d'une Personnalisation de chaussures"></a>
+                    <p class="image-text">PERSONNALISATION</p>
+                </div>
+
+            </section>
+
+            <!-- Bande NOUVEAUTÉS -->
+
+            <div class="container marginT70 coupeSection">
+                <h3>Notre sélection éco-responsable</h3>
             </div>
 
-            <div class="image-container" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000"
-                data-aos-offset="200">
-                <a href=""><img src="assets/enfant.png" alt="photo d'enfant"></a>
-                <p class="image-text">ENFANT</p>
-            </div>
-
-            <div class="image-container" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2500"
-                data-aos-offset="200">
-                <a href=""> <img class="maxW420" src="assets/PersoSousHero.jpg"
-                        alt="photo d'une Personnalisation de chaussures"></a>
-                <p class="image-text">PERSONNALISATION</p>
-            </div>
-
-        </section>
-
-        <!-- Bande NOUVEAUTÉS -->
-
-        <div class="container marginT70 coupeSection">
-            <h3>Notre sélection éco-responsable</h3>
-        </div>
-
-        <!-- Section produits --> <!-- "produits" -->
+            <!-- Section produits --> <!-- "produits" -->
 
 
-        <section class="container justify-between marginT70 flex gap">
+            <section class="container justify-between marginT70 flex gap" id="sectionProduits">
 
 
-            <div class="large-3 flex gap10">
+
+
+
+                <!--  <div class="large-3 flex gap10">
                 <img class="large-12 imgArticle" src="assets/Sneakers.jpg" alt="photo d'une sneakers">
                 <div class="large-12">
                     <div class="contentArticle">
@@ -154,192 +158,73 @@
                     </div>
                     <p class="btnAcheter">Acheter</p>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="large-3 flex gap10">
-                <img class="large-12 imgArticle" src="assets/Sneakers.jpg" alt="photo d'une sneakers">
-                <div class="large-12">
-                    <div class="contentArticle">
-                        <h2>
-                            Sneakers Urbaines
-                        </h2>
-                    </div>
-                    <div>
-                        <p>
-                            Affirmez votre style urbain avec nos sneakers tendance. Des designs modernes fabriqués de
-                            manière éthique pour une empreinte écologique réduite.
-                        </p>
-                    </div>
-                    <p class="btnAcheter">Acheter</p>
+
+
+            </section>
+
+
+
+
+            <!-- section nos engagement -->
+            <section class="flex marginT70 justify-center bgImgEngagement">
+
+
+                <div class="width50p content-engagement flex" data-aos="fade-up" data-aos-duration="2500"
+                    data-aos-offset="400">
+
+
+                    <h3>
+                        Nos engagements
+                    </h3>
+
+                    <h4>Chez Bonpied, implantés au cœur de Rennes, chaque pas compte.</h4>
+
+                    <p>
+                        Nous croyons qu’allier style et respect de la planète est possible, et c’est pourquoi nous vous
+                        proposons des chaussures éco-sourcées, fabriquées avec soin à partir de matériaux durables.
+                    </p>
+
+                    <p>
+                        Notre mission ? Réduire notre impact environnemental à chaque étape, de la sélection des
+                        matières
+                        premières à la fabrication locale, en passant par des circuits courts et une logistique
+                        responsable.
+
+                    </p>
+
+                    <p>
+                        Plus qu’un simple produit, Bonpied est un engagement pour un avenir plus vert. En choisissant
+                        nos
+                        chaussures, vous marchez avec nous vers un monde où mode rime avec responsabilité.
+                    </p>
                 </div>
-            </div>
 
-            <div class="large-3 flex gap10">
-                <img class="large-12 imgArticle" src="assets/Sneakers.jpg" alt="photo d'une sneakers">
-                <div class="large-12">
-                    <div class="contentArticle">
-                        <h2>
-                            Sneakers Urbaines
-                        </h2>
-                    </div>
-                    <div>
-                        <p>
-                            Affirmez votre style urbain avec nos sneakers tendance. Des designs modernes fabriqués de
-                            manière éthique pour une empreinte écologique réduite.
-                        </p>
-                    </div>
-                    <p class="btnAcheter">Acheter</p>
-                </div>
-            </div>
 
-            <div class="large-3 flex gap10">
-                <img class="large-12 imgArticle" src="assets/Sneakers.jpg" alt="photo d'une sneakers">
-                <div class="large-12">
-                    <div class="contentArticle">
-                        <h2>
-                            Sneakers Urbaines
-                        </h2>
-                    </div>
-                    <div>
-                        <p>
-                            Affirmez votre style urbain avec nos sneakers tendance. Des designs modernes fabriqués de
-                            manière éthique pour une empreinte écologique réduite.
-                        </p>
-                    </div>
-                    <p class="btnAcheter">Acheter</p>
-                </div>
-            </div>
 
-            <div class="large-3 flex gap10">
-                <img class="large-12 imgArticle" src="assets/Sneakers.jpg" alt="photo d'une sneakers">
-                <div class="large-12">
-                    <div class="contentArticle">
-                        <h2>
-                            Sneakers Urbaines
-                        </h2>
-                    </div>
-                    <div>
-                        <p>
-                            Affirmez votre style urbain avec nos sneakers tendance. Des designs modernes fabriqués de
-                            manière éthique pour une empreinte écologique réduite.
-                        </p>
-                    </div>
-                    <p class="btnAcheter">Acheter</p>
-                </div>
-            </div>
-
-            <div class="large-3 flex gap10">
-                <img class="large-12 imgArticle" src="assets/Sneakers.jpg" alt="photo d'une sneakers">
-                <div class="large-12">
-                    <div class="contentArticle">
-                        <h2>
-                            Sneakers Urbaines
-                        </h2>
-                    </div>
-                    <div>
-                        <p>
-                            Affirmez votre style urbain avec nos sneakers tendance. Des designs modernes fabriqués de
-                            manière éthique pour une empreinte écologique réduite.
-                        </p>
-                    </div>
-                    <p class="btnAcheter">Acheter</p>
-                </div>
-            </div>
-
-            <div class="large-3 flex gap10">
-                <img class="large-12 imgArticle" src="assets/Sneakers.jpg" alt="photo d'une sneakers">
-                <div class="large-12">
-                    <div class="contentArticle">
-                        <h2>
-                            Sneakers Urbaines
-                        </h2>
-                    </div>
-                    <div>
-                        <p>
-                            Affirmez votre style urbain avec nos sneakers tendance. Des designs modernes fabriqués de
-                            manière éthique pour une empreinte écologique réduite.
-                        </p>
-                    </div>
-                    <p class="btnAcheter">Acheter</p>
-                </div>
-            </div>
-
-            <div class="large-3 flex gap10">
-                <img class="large-12 imgArticle" src="assets/Sneakers.jpg" alt="photo d'une sneakers">
-                <div class="large-12">
-                    <div class="contentArticle">
-                        <h2>
-                            Sneakers Urbaines
-                        </h2>
-                    </div>
-                    <div>
-                        <p>
-                            Affirmez votre style urbain avec nos sneakers tendance. Des designs modernes fabriqués de
-                            manière éthique pour une empreinte écologique réduite.
-                        </p>
-                    </div>
-                    <p class="btnAcheter">Acheter</p>
-                </div>
-            </div>
-
-        </section>
+            </section>
 
 
 
 
-        <!-- section nos engagement -->
-        <section class="flex marginT70 justify-center bgImgEngagement">
 
+            <!-- Bande Avis -->
 
-            <div class="width50p content-engagement flex" data-aos="fade-up" data-aos-duration="2500"
-                data-aos-offset="400">
-
-
-                <h3>
-                    Nos engagements
-                </h3>
-
-                <h4>Chez Bonpied, implantés au cœur de Rennes, chaque pas compte.</h4>
-
-                <p>
-                    Nous croyons qu’allier style et respect de la planète est possible, et c’est pourquoi nous vous
-                    proposons des chaussures éco-sourcées, fabriquées avec soin à partir de matériaux durables.
-                </p>
-
-                <p>
-                    Notre mission ? Réduire notre impact environnemental à chaque étape, de la sélection des matières
-                    premières à la fabrication locale, en passant par des circuits courts et une logistique responsable.
-
-                </p>
-
-                <p>
-                    Plus qu’un simple produit, Bonpied est un engagement pour un avenir plus vert. En choisissant nos
-                    chaussures, vous marchez avec nous vers un monde où mode rime avec responsabilité.
-                </p>
+            <div class="container marginT70 coupeSection">
+                <h3>Des choix durables, approuvés par vous</h3>
             </div>
 
 
+            <!-- section avis --> <!-- "temoignages" -->
 
-        </section>
-
-
-
+            <section class="flex justify-between gap container avis marginT70" id="sectionAvis">
 
 
-        <!-- Bande Avis -->
-
-        <div class="container marginT70 coupeSection">
-            <h3>Des choix durables, approuvés par vous</h3>
-        </div>
+                <!-- AVIS -->
 
 
-        <!-- section avis --> <!-- "temoignages" -->
-
-        <section class="flex justify-between gap container avis marginT70">
-
-
-            <!-- AVIS 1 -->
-            <div class="large-4 flex gap10 avisClient" data-aos="zoom-in" data-aos-duration="1000">
+                <!-- <div class="large-4 flex gap10 avisClient" data-aos="zoom-in" data-aos-duration="1000">
 
                 <div>
                     <img src="assets/avis1.png" alt="photo d'une personne">
@@ -366,82 +251,24 @@
                         expérience exceptionnelle !”
                     </p>
                 </div>
-            </div>
+            </div> -->
 
-            <!-- AVIS 2 -->
-            <div class="large-4 flex gap10 avisClient" data-aos="zoom-in" data-aos-duration="1000">
-                <div>
-                    <img src="assets/avis2.png" alt="photo d'une personne">
-                </div>
+            </section>
 
-                <div>
-                    <h3>
-                        Louis
-                    </h3>
-                    <h4>
-                        Experience
-                    </h4>
-                    <p>
-                        Note
-                    </p>
-                </div>
-                <div>
-                    <h3>
-                        Avis
-                    </h3>
-                    <p>
-                        “J'ai personnalisé mes propres sneakers chez BonPied, et elles sont tout simplement géniales. Le
-                        processus était facile, et le résultat final correspond parfaitement à ce que je voulais. Une
-                        expérience exceptionnelle !”
-                    </p>
-                </div>
-            </div>
 
-            <!-- AVIS 3 -->
-            <div class="large-4 flex gap10 avisClient" data-aos="zoom-in" data-aos-duration="1000">
-                <div>
-                    <img src="assets/avis3.png" alt="photo d'une personne">
-                </div>
+            <!-- Bande Services -->
 
-                <div>
-                    <h3>
-                        Louis
-                    </h3>
-                    <h4>
-                        Experience
-                    </h4>
-                    <p>
-                        Note
-                    </p>
-                </div>
-                <div>
-                    <h3>
-                        Avis
-                    </h3>
-                    <p>
-                        “J'ai personnalisé mes propres sneakers chez BonPied, et elles sont tout simplement géniales. Le
-                        processus était facile, et le résultat final correspond parfaitement à ce que je voulais. Une
-                        expérience exceptionnelle !”
-                    </p>
-                </div>
+            <div class="container marginT70 coupeSection">
+                <h3>Un service à la hauteur de vos valeurs</h3>
             </div>
 
 
-        </section>
+            <!-- section service --> <!-- "services" -->
 
+            <section class="container flex justify-between">
 
-        <!-- Bande Services -->
-
-        <div class="container marginT70 coupeSection">
-            <h3>Un service à la hauteur de vos valeurs</h3>
-        </div>
-
-
-        <!-- section service --> <!-- "services" -->
-
-        <section class="container flex justify-between">
-            <div class="services marginT70 flex gap large-6">
-                <div data-aos="fade-up" data-aos-duration="1000">
+                <div class="services marginT70 flex gap large-6" id="sectionServices">
+                    <!-- <div data-aos="fade-up" data-aos-duration="1000">
                     <h3>
                         Personnalisation
                     </h3>
@@ -469,23 +296,30 @@
                         Rejoignez-nous lors de nos événements responsables. Des initiatives locales pour sensibiliser à
                         la durabilité et promouvoir un mode de vie éco-conscient.
                     </p>
+                </div>  -->
+
                 </div>
-            </div>
 
 
-            <!-- 3 image avant footer -->
-            <div class="grid-container large-5 marginT70">
-                <img src="assets/PersonnalisationFooter.png" alt="personne qui peint des chaussures" class="img-large">
-                <img src="assets/recyclage.png" alt="photo de 3 poubelle de recyclage" class="img-small top">
-                <img src="assets/Evenement.jpg" alt="photo de personne entrain de recyclées" class="img-small bottom">
-            </div>
+                <!-- 3 image avant footer -->
+                <div class="grid-container large-5 marginT70">
+                    <img src="assets/PersonnalisationFooter.png" alt="personne qui peint des chaussures"
+                        class="img-large">
+                    <img src="assets/recyclage.png" alt="photo de 3 poubelle de recyclage" class="img-small top">
+                    <img src="assets/Evenement.jpg" alt="photo de personne entrain de recyclées"
+                        class="img-small bottom">
+                </div>
 
 
 
 
-        </section>
+            </section>
 
     </main>
+
+
+
+
 
     <!-- footer -->
     <footer class="marginT70" id="footer">
