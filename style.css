@@ -95,7 +95,7 @@ body {
     flex-wrap: wrap;
 }
 
-.flexNoWrap{
+.flexNoWrap {
     display: flex;
 }
 
@@ -139,7 +139,7 @@ body {
     gap: var(--gap10)
 }
 
-.gap50{
+.gap50 {
     gap: 50px;
 }
 
@@ -321,11 +321,11 @@ les resolutions d'ecrans d'apres un petit script sass*/
     padding-top: 30px;
 }
 
-.maxW420{
+.maxW420 {
     max-width: 420px;
 }
 
-.width50p{
+.width50p {
     width: 50%;
 
 }
@@ -373,7 +373,7 @@ a {
     text-decoration: none;
 }
 
-.nowrap{
+.nowrap {
     white-space: nowrap;
 }
 
@@ -545,13 +545,14 @@ bande defilante et non defilante
     position: relative;
     display: flex;
     align-items: center;
-    p{
-      font-size: 20px;
-    }
-  }
 
-.coupeSection{
-    h3{
+    p {
+        font-size: 20px;
+    }
+}
+
+.coupeSection {
+    h3 {
         color: #33664F;
         font-size: 30px;
         text-align: center;
@@ -613,21 +614,31 @@ section des produits
 section engagement
 ---------------------------------------------------*/
 
-.content-engagement{
-    background-color: #33664F;
+.content-engagement {
+    background-color: #33664f7f;
     padding: 30px;
     color: white;
     gap: 20px;
-    
-    h3{
+    border-radius: 20px;
+    h3 {
         font-size: 34px;
     }
-    h4{
+
+    h4 {
         font-size: 24px;
     }
-    p{
+
+    p {
         font-size: 22px;
     }
+}
+
+.bgImgEngagement {
+    background-image: url(assets/bgEngagement.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 70px;
 }
 
 /*--------------------------------------------------
@@ -652,7 +663,8 @@ section services
     h3 {
         color: #33664F;
     }
-    p{
+
+    p {
         font-size: 20px;
     }
 }
@@ -718,21 +730,6 @@ footer {
 /*--------------------------------------------------
 en cours de test
 ---------------------------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
