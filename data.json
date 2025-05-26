@@ -9,137 +9,100 @@
   ],
   "produits": [
     {
-      "nom": "Sneakers Classic",
-      "description": "Adoptez le style classique avec nos sneakers éco-sourcés. Conçues avec des matériaux recyclés, elles allient confort, durabilité et élégance.",
+      "nom": "Sneakers Légères Air",
+      "description": "Confort idéal avec sneakers légères et respirantes, parfaites pour marcher toute la journée avec aisance.",
       "imageurl": "https://media.veja-store.com/images/t_sfcc-pdp-desktop-v2/f_auto/v1736129586/VEJA/PACKSHOTS/CA1620573_1/veja-baskets-campo-ca-jute-beige-CA1620573_1.jpg",
-      "prix": "230€"
+      "prix": "285€"
     },
     {
-      "nom": "Sneakers Urbaines",
-      "description": "Affirmez votre style urbain avec nos sneakers tendance. Des designs modernes fabriqués de manière éthique pour une empreinte écologique réduite.",
+      "nom": "Sneakers Hautes Vibe",
+      "description": "Sneakers stables, performantes et écologiques pensées pour affronter vos journées intenses avec style.",
       "imageurl": "https://media.veja-store.com/images/t_sfcc-pdp-desktop-v2/f_auto/v1748030122/VEJA/PACKSHOTS/CA0120535_1/veja-baskets-campo-ca-coton-biologique-blanc-CA0120535_1.jpg",
-      "prix": "230€"
+      "prix": "270€"
     },
     {
-      "nom": "Sneakers Légères",
-      "description": "Optez pour le confort ultime avec nos sneakers légères. Fabriquées avec des matériaux respirants, elles sont idéales pour une utilisation quotidienne.",
+      "nom": "Sneakers Vintage Bio",
+      "description": "Design rétro et matières durables pour une touche stylée et responsable au quotidien, sans compromis.",
       "imageurl": "https://media.veja-store.com/images/t_sfcc-pdp-desktop-v2/f_auto/v1736129963/VEJA/PACKSHOTS/FU2020708_1/veja-baskets-panenka-cuir-biologique-blanc-FU2020708_1.jpg",
-      "prix": "190€"
+      "prix": "235€"
     },
     {
-      "nom": "Sneakers Hautes Performance",
-      "description": "Atteignez de nouveaux sommets avec nos sneakers hautes performances. Conçues pour offrir un soutien optimal tout en respectant l'environnement.",
+      "nom": "Sneakers Classic Mod",
+      "description": "Classiques, durables et stylées, idéales pour vos sorties urbaines ou professionnelles avec aisance.",
       "imageurl": "https://media.veja-store.com/images/t_sfcc-pdp-desktop-v2/f_auto/v1736130595/VEJA/PACKSHOTS/VO0103863_1/veja-baskets-volley-coton-biologique-blanc-VO0103863_1.jpg",
-      "prix": "290€"
+      "prix": "220€"
     },
     {
-      "nom": "Sneakers Vintage Éco-sourcées",
-      "description": "Retrouvez le charme du vintage avec nos sneakers éco-sourcées. Des modèles rétro repensés avec des matériaux respectueux de l'environnement.",
+      "nom": "Sneakers Légères Bz",
+      "description": "Conçues pour bouger avec légèreté, elles assurent confort, fraîcheur et liberté à chaque foulée.",
       "imageurl": "https://media.veja-store.com/images/t_sfcc-pdp-desktop-v2/f_auto/v1748030132/VEJA/PACKSHOTS/CP0501537_1/veja-baskets-campo-cuir-blanc-CP0501537_1.jpg",
-      "prix": "250€"
+      "prix": "198€"
     },
     {
-      "nom": "Sneakers Vintage Éco-sourcées",
-      "description": "Affirmez votre style urbain avec nos sneakers tendance. Des designs modernes fabriqués de manière éthique pour une empreinte écologique réduite.",
+      "nom": "Sneakers Hautes Pro",
+      "description": "Maintien parfait et design éthique pour vos journées les plus dynamiques, sans sacrifier le style.",
       "imageurl": "https://media.veja-store.com/images/t_sfcc-pdp-desktop-v2/f_auto/v1736130542/VEJA/PACKSHOTS/VO2203865_1/veja-baskets-volley-recycle-gris-VO2203865_1.jpg",
-      "prix": "230€"
+      "prix": "299€"
     },
     {
-      "nom": "Sneakers Vintage Éco-sourcées",
-      "description": "Adoptez le style classique avec nos sneakers éco-sourcés. Conçues avec des matériaux recyclés, elles allient confort, durabilité et élégance.",
+      "nom": "Sneakers Vintage Go",
+      "description": "Rétro et recyclées, parfaites pour un look tendance et responsable au quotidien sans effort.",
       "imageurl": "https://media.veja-store.com/images/t_sfcc-pdp-desktop-v2/f_auto/v1736129618/VEJA/PACKSHOTS/CW0520571_1/veja-baskets-campo-winter-fourre-blanc-CW0520571_1.jpg",
-      "prix": "210€"
+      "prix": "175€"
     },
     {
-      "nom": "Sneakers Vintage Éco-sourcées",
-      "description": "Optez pour le confort ultime avec nos sneakers légères. Fabriquées avec des matériaux respirants, elles sont idéales pour une utilisation quotidienne.",
+      "nom": "Sneakers Classic Vibe",
+      "description": "Sobres et confortables, elles s'adaptent à toutes vos tenues et à votre rythme quotidien actif.",
       "imageurl": "https://media.veja-store.com/images/t_sfcc-pdp-desktop-v2/f_auto/v1736129650/VEJA/PACKSHOTS/CP0503887_1/veja-baskets-campo-cuir-blanc-CP0503887_1.jpg",
-      "prix": "190€"
+      "prix": "249€"
     },
     {
-      "nom": "Sneakers Classic",
-      "description": "Atteignez de nouveaux sommets avec nos sneakers hautes performances. Conçues pour offrir un soutien optimal tout en respectant l'environnement.",
-      "imageurl": "https://media.veja-store.com/images/t_sfcc-pdp-desktop-v2/f_auto/v1736129586/VEJA/PACKSHOTS/CA1620573_1/veja-baskets-campo-ca-jute-beige-CA1620573_1.jpg",
-      "prix": "230€"
-    },
-    {
-      "nom": "Sneakers Urbaines",
-      "description": "Retrouvez le charme du vintage avec nos sneakers éco-sourcées. Des modèles rétro repensés avec des matériaux respectueux de l'environnement.",
-      "imageurl": "https://media.veja-store.com/images/t_sfcc-pdp-desktop-v2/f_auto/v1748030122/VEJA/PACKSHOTS/CA0120535_1/veja-baskets-campo-ca-coton-biologique-blanc-CA0120535_1.jpg",
-      "prix": "230€"
-    },
-    {
-      "nom": "Sneakers Légères",
-      "description": "Affirmez votre style urbain avec nos sneakers tendance. Des designs modernes fabriqués de manière éthique pour une empreinte écologique réduite.",
-      "imageurl": "https://media.veja-store.com/images/t_sfcc-pdp-desktop-v2/f_auto/v1736129963/VEJA/PACKSHOTS/FU2020708_1/veja-baskets-panenka-cuir-biologique-blanc-FU2020708_1.jpg",
-      "prix": "190€"
-    },
-    {
-      "nom": "Sneakers Hautes Performance",
-      "description": "Optez pour le confort ultime avec nos sneakers légères. Fabriquées avec des matériaux respirants, elles sont idéales pour une utilisation quotidienne.",
-      "imageurl": "https://media.veja-store.com/images/t_sfcc-pdp-desktop-v2/f_auto/v1736130595/VEJA/PACKSHOTS/VO0103863_1/veja-baskets-volley-coton-biologique-blanc-VO0103863_1.jpg",
-      "prix": "290€"
-    },
-    {
-      "nom": "Sneakers Vintage Éco-sourcées",
-      "description": "Adoptez le style classique avec nos sneakers éco-sourcés. Conçues avec des matériaux recyclés, elles allient confort, durabilité et élégance.",
-      "imageurl": "https://media.veja-store.com/images/t_sfcc-pdp-desktop-v2/f_auto/v1748030132/VEJA/PACKSHOTS/CP0501537_1/veja-baskets-campo-cuir-blanc-CP0501537_1.jpg",
-      "prix": "250€"
-    },
-    {
-      "nom": "Sneakers Vintage Éco-sourcées",
-      "description": "Affirmez votre style urbain avec nos sneakers tendance. Des designs modernes fabriqués de manière éthique pour une empreinte écologique réduite.",
-      "imageurl": "https://media.veja-store.com/images/t_sfcc-pdp-desktop-v2/f_auto/v1736130542/VEJA/PACKSHOTS/VO2203865_1/veja-baskets-volley-recycle-gris-VO2203865_1.jpg",
-      "prix": "230€"
-    },
-    {
-      "nom": "Sneakers Vintage Éco-sourcées",
-      "description": "Atteignez de nouveaux sommets avec nos sneakers hautes performances. Conçues pour offrir un soutien optimal tout en respectant l'environnement.",
-      "imageurl": "https://media.veja-store.com/images/t_sfcc-pdp-desktop-v2/f_auto/v1736129618/VEJA/PACKSHOTS/CW0520571_1/veja-baskets-campo-winter-fourre-blanc-CW0520571_1.jpg",
-      "prix": "210€"
-    },
-    {
-      "nom": "Sneakers Vintage Éco-sourcées",
-      "description": "Optez pour le confort ultime avec nos sneakers légères. Fabriquées avec des matériaux respirants, elles sont idéales pour une utilisation quotidienne.",
-      "imageurl": "https://media.veja-store.com/images/t_sfcc-pdp-desktop-v2/f_auto/v1736129650/VEJA/PACKSHOTS/CP0503887_1/veja-baskets-campo-cuir-blanc-CP0503887_1.jpg",
+      "nom": "Sneakers Légères Zest",
+      "description": "Confortables et aérées, elles accompagnent votre routine avec style et un soutien durable et souple.",
+      "imageurl": "https://media.veja-store.com/images/t_sfcc-pdp-desktop-v2/f_auto/v1736130575/VEJA/PACKSHOTS/VO2020505_1/veja-baskets-volley-cuir-biologique-blanc-VO2020505_1.jpg",
       "prix": "180€"
-    }
-  ],
-  "services": [
-    {
-      "nom": "Personnalisation",
-      "description": "Personnalisez vos sneakers pour un style unique. Choisissez vos couleurs, motifs et matériaux préférés pour des chaussures qui reflètent votre personnalité."
     },
     {
-      "nom": "Recyclage",
-      "description": "Participez à notre programme de recyclage. Ramenez vos anciennes sneakers BonPied pour qu'elles soient recyclées de manière responsable, contribuant ainsi à la réduction des déchets."
+      "nom": "Sneakers Hautes Go",
+      "description": "Pensées pour durer, elles offrent stabilité, résistance et respect de l’environnement actif moderne.",
+      "imageurl": "https://media.veja-store.com/images/t_sfcc-pdp-desktop-v2/f_auto/v1736127349/VEJA/PACKSHOTS/CP0502195_1/veja-baskets-campo-cuir-blanc-CP0502195_1.jpg",
+      "prix": "288€"
     },
     {
-      "nom": "Événements Responsables",
-      "description": "Rejoignez-nous lors de nos événements responsables. Des initiatives locales pour sensibiliser à la durabilité et promouvoir un mode de vie éco-conscient."
-    }
-  ],
-  "temoignages": [
-    {
-      "prenom": "Emma",
-      "typeExperience": "Sneakers Urbaines",
-      "commentaire": "Les sneakers urbaines de BonPied sont incroyables. Elles sont confortables, stylées et le fait qu'elles soient éco-sourcées me donne encore plus de raisons de les adorer. Merci pour cette superbe collection !",
-      "note": 4,
-      "imageurl": "https://images.pexels.com/photos/32256507/pexels-photo-32256507.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      "nom": "Sneakers Vintage Act",
+      "description": "Recyclées et stylées, elles allient rétro, éthique et conscience environnementale avec élégance.",
+      "imageurl": "https://media.veja-store.com/images/t_sfcc-pdp-desktop-v2/f_auto/v1736128543/VEJA/PACKSHOTS/PS1803741_1/veja-baskets-paulistana-recycle-gris-PS1803741_1.jpg",
+      "prix": "215€"
     },
     {
-      "prenom": "Louis",
-      "typeExperience": "Personnalisation",
-      "commentaire": "J'ai personnalisé mes propres sneakers chez BonPied, et elles sont tout simplement géniales. Le processus était facile, et le résultat final correspond parfaitement à ce que je voulais. Une expérience exceptionnelle !",
-      "note": 5,
-      "imageurl": "https://images.pexels.com/photos/3214680/pexels-photo-3214680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      "nom": "Sneakers Classic Zen",
+      "description": "Simplicité et robustesse réunies dans une sneaker pensée pour durer avec style et polyvalence.",
+      "imageurl": "https://media.veja-store.com/images/t_sfcc-pdp-desktop-v2/f_auto/v1748029653/VEJA/PACKSHOTS/XD0202297_1/veja-baskets-v-12-cuir-blanc-XD0202297_1.jpg",
+      "prix": "255€"
     },
     {
-      "prenom": "Léa",
-      "typeExperience": "Recyclage",
-      "commentaire": "Je suis reconnaissante que BonPied offre un programme de recyclage. C'est agréable de savoir que mes anciennes sneakers sont recyclées de manière responsable. Une initiative géniale !",
-      "note": 5,
-      "imageurl": "https://images.pexels.com/photos/32222200/pexels-photo-32222200/free-photo-of-portrait-elegant-d-une-femme-aux-cheveux-tresses.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      "nom": "Sneakers Légères Sky",
+      "description": "Parfaites au quotidien, elles assurent légèreté, confort et adaptabilité sur tous les terrains.",
+      "imageurl": "https://media.veja-store.com/images/t_sfcc-pdp-desktop-v2/f_auto/v1736125396/VEJA/PACKSHOTS/DR1903361_1/veja-baskets-dekkan-rp-ripstop-vert-DR1903361_1.jpg",
+      "prix": "199€"
+    },
+    {
+      "nom": "Sneakers Hautes Flow",
+      "description": "Robustes, dynamiques et écoresponsables pour vous suivre partout, même lors d'efforts prolongés.",
+      "imageurl": "https://media.veja-store.com/images/t_sfcc-pdp-desktop-v2/f_auto/v1748030268/VEJA/PACKSHOTS/RO1803876_1/veja-baskets-rio-branco-ii-recycle-bleu-RO1803876_1.jpg",
+      "prix": "277€"
+    },
+    {
+      "nom": "Sneakers Vintage Fit",
+      "description": "Look rétro assumé et matériaux recyclés pour une empreinte réduite et un confort stylé.",
+      "imageurl": "https://media.veja-store.com/images/t_sfcc-pdp-desktop-v2/f_auto/v1748030178/VEJA/PACKSHOTS/CE2820742_1/veja-baskets-condor-3-advanced-recycle-blanc-CE2820742_1.jpg",
+      "prix": "165€"
+    },
+    {
+      "nom": "Sneakers Classic Neo",
+      "description": "Classiques et actuelles, elles allient confort, style et durabilité pour la ville et les trajets.",
+      "imageurl": "https://media.veja-store.com/images/t_sfcc-pdp-desktop-v2/f_auto/v1736125528/VEJA/PACKSHOTS/FR2303371_1/veja-baskets-fitz-roy-recycle-beige-FR2303371_1.jpg",
+      "prix": "240€"
     }
   ]
 }
