@@ -616,6 +616,7 @@ section engagement
 
 .content-engagement {
     background-color: #33664f7f;
+    backdrop-filter: blur(5px);
     padding: 30px;
     color: white;
     gap: 20px;
@@ -639,6 +640,7 @@ section engagement
     background-position: center;
     background-repeat: no-repeat;
     padding: 70px;
+    background-attachment: fixed ;
 }
 
 /*--------------------------------------------------
@@ -656,10 +658,9 @@ section avis clients
 }
 
 .imgAvis{
-    max-width: 128px;
-    max-height: 148px;
-    
-    
+    width: 128px;
+    height: 148px;
+    object-fit: cover;
 }
 
 
