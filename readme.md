@@ -28,6 +28,7 @@ BonPied est un site vitrine conçu dans le cadre de ma formation à La Toile by 
 - Boutique en ligne (catalogue visuel)
 - Barre de recherche
 - Expérience utilisateur simple et intuitive
+- Animations dynamiques pour une meilleure expérience utilisateur
 
 ---
 
@@ -37,6 +38,9 @@ BonPied est un site vitrine conçu dans le cadre de ma formation à La Toile by 
 - **CSS**
 - **JavaScript**
 - **Base de données JSON** (fournie par les formateurs)
+- **Librairies JavaScript** :
+  - [GSAP (GreenSock Animation Platform)](https://greensock.com/gsap/)
+  - [AOS (Animate On Scroll)](https://michalsnik.github.io/aos/)
 - **Framework pédagogique** de Nicolas (formateur)
 - **Outils** : Figma, Visual Studio Code
 
@@ -76,4 +80,3 @@ Projet en cours de finalisation dans le cadre de la formation.
 - Les visuels produits proviennent du site **Veja** – utilisés à des fins pédagogiques uniquement.
 
 ---
-
