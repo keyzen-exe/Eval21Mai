@@ -1,15 +1,17 @@
 AOS.init();
 
+
+//anim deffilement GSAP
 gsap.to("#deffilement", {
   xPercent: -50,
-  duration: 40,
+  duration: 60,
   repeat: -1,
   ease: "linear"
 });
 
 
 
-
+//recupere les donnée dans le json
 fetch("data.json")
   .then((response) => response.json())
   .then(data => {
@@ -24,7 +26,13 @@ fetch("data.json")
   });
 
 
-// SECTION PRODUITS
+
+
+
+/*--------------------------------------------------
+Section des produits
+---------------------------------------------------*/
+
 // role afficher dans l'html et stock les donnee dans des variable
 // paramettre tableauDeProduits un tableau de produits
 // return pas affiche
@@ -34,11 +42,15 @@ function afficheProduits(tableauDeProduits) {
     let nom = info.nom
     let description = info.description
     let imageurl = info.imageurl
+    let prix = info.prix
 
-    // role afficher dans la section qui a l'id 
+    // role afficher dans la section qui a l'id "sectionProduits"
     document.getElementById("sectionProduits").innerHTML +=
       `
-    <div class="large-3 flex gap10">
+    <div class="large-3 flex gap10 cardProduit">
+                  <p class="PrixProduit">
+                    ${prix}
+                  </p>
                 <img class="large-12 imgArticle" src="${imageurl}" alt="photo d'une sneakers">
                 <div class="large-12">
                     <div class="contentArticle">
@@ -63,7 +75,11 @@ function afficheProduits(tableauDeProduits) {
 
 
 
-// SECTION AVIS
+/*--------------------------------------------------
+Section des avis
+---------------------------------------------------*/
+
+
 // role afficher dans l'html et stock les donnee dans des variable
 // paramettre tableauDeProduits un tableau de produits
 // return pas affiche
@@ -76,7 +92,7 @@ function afficheAvis(tableauDeProduits) {
     let commentaire = info.commentaire
     let imageurl = info.imageurl
 
-    // role afficher dans la section qui a l'id
+    // role afficher dans la section qui a l'id "sectionAvis"
     document.getElementById("sectionAvis").innerHTML +=
       `
    <div class="large-4 flex gap10 avisClient" data-aos="zoom-in" data-aos-duration="1000">
@@ -89,11 +105,14 @@ function afficheAvis(tableauDeProduits) {
                     <h3>
                         ${prenom}
                     </h3>
+                     <h4>
+                        Experience
+                    </h4>
                     <h4>
                         ${typeExperience}
                     </h4>
                     <p>
-                        ${note}
+                        ${note}/5
                     </p>
                 </div>
                 <div>
@@ -113,7 +132,11 @@ function afficheAvis(tableauDeProduits) {
 
 
 
-// SECTION 
+/*--------------------------------------------------
+Section des Services
+---------------------------------------------------*/
+
+
 // role afficher dans l'html et stock les donnee dans des variable
 // paramettre tableauDeProduits un tableau de produits
 // return pas affiche
@@ -123,7 +146,7 @@ function afficheServices(tableauDeProduits) {
     let nom = info.nom
     let description = info.description
 
-    // role afficher dans la section qui a l'id
+    // role afficher dans la section qui a l'id "sectionServices"
     document.getElementById("sectionServices").innerHTML +=
       `
                 <div data-aos="fade-up" data-aos-duration="1000">
@@ -142,24 +165,32 @@ function afficheServices(tableauDeProduits) {
 }
 
 
+/*--------------------------------------------------
+Title navigateur 
+---------------------------------------------------*/
 
-// Title navigateur 
-// role afficher dans l'html et stock les donnee dans des variable
+
+// role afficher dans l'html et stock les info dans des variable
 // paramettre nom
 // return pas affiche
 function afficheTitle(nom) {
 
-  // role afficher dans la section qui a l'id
+  // role afficher le titre du navigateur
   document.title = nom
 
 
 };
 
 
-// Bande defilante
+
+/*--------------------------------------------------
+Bande defilante
+---------------------------------------------------*/
+
+
 // role afficher dans l'html et stock les donnee dans des variable
-// paramettre donnee
-// return pas affiche
+// paramettre info
+// return pas affiche une Bande defilante
 function afficheBandeDefilante(info) {
   info.forEach(produits => {
 
@@ -169,21 +200,16 @@ function afficheBandeDefilante(info) {
     let avantagesClients3 = info[2];
 
 
-    // role afficher dans la section qui a l'id "carteContainer"
+    // role afficher dans la section qui a l'id "deffilement"
     document.getElementById("deffilement").innerHTML += `
 
-        
+      <p>${avantagesClients1}</p>
+      <p>${avantagesClients2}</p>
+      <p>${avantagesClients3}</p>
 
-                <p>${avantagesClients1}</p>
-                <p>${avantagesClients2}</p>
-                <p>${avantagesClients3}</p>
-
-                
-                <p>${avantagesClients1}</p>
-                <p>${avantagesClients2}</p>
-                <p>${avantagesClients3}</p>
-            
-    
+      <p>${avantagesClients1}</p>
+      <p>${avantagesClients2}</p>
+      <p>${avantagesClients3}</p>
           
           `
   });
@@ -193,21 +219,44 @@ function afficheBandeDefilante(info) {
 
 
 
+/*--------------------------------------------------
+Section des Hero
+---------------------------------------------------*/
 
 
-
-
-
+// role afficher dans l'html et stock les donnee dans des variable
+// paramettre (phraseAccroche, texteAppelAction)
+// return pas affiche dans le hero
 function afficheCTAphraseAccroche(phraseAccroche, texteAppelAction) {
 
-  document.getElementById("hero").innerHTML += `
+
+  //// role afficher dans la section qui a l'id "hero"
+  document.getElementById("sectionHero").innerHTML += `
   
   <h1>${phraseAccroche}</h1> 
-                <div class="btn-primary">
-                    <a href="">
-                        <p>${texteAppelAction}</p>
-                    </a>
-                </div>
+    <div class="btn-primary">
+        <a href=""><p>${texteAppelAction}</p></a>
+          </div>
                 
   `
 };
+
+
+
+
+
+//essai input
+const input = document.getElementById("recherche");
+input.addEventListener("input", () => {
+  const filtre = input.value.toLowerCase();
+  const cards = document.querySelectorAll("#sectionProduits .card");
+
+  cards.forEach(card => {
+    const nom = card.getAttribute("data.produits");
+    const visible = nom.includes(filtre);
+    card.style.display = visible ? "block" : "none";
+  });
+});
+
+
+

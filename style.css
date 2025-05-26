@@ -405,7 +405,7 @@ a {
 
 .btnAcheter {
     display: inline-flex;
-    padding: 8px 15px;
+    padding: 7px 15px;
     justify-content: center;
     gap: 10px;
     border-radius: 0px 20px;
@@ -610,6 +610,28 @@ section des produits
 
 }
 
+.cardProduit{
+    position: relative;
+}
+
+.PrixProduit {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    color: #F9F6E9;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background-color: #33664F;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+    right: -10px;
+    top: 30px;
+}
+
+
 /*--------------------------------------------------
 section engagement
 ---------------------------------------------------*/
@@ -621,6 +643,7 @@ section engagement
     color: white;
     gap: 20px;
     border-radius: 20px;
+
     h3 {
         font-size: 34px;
     }
@@ -640,7 +663,7 @@ section engagement
     background-position: center;
     background-repeat: no-repeat;
     padding: 70px;
-    background-attachment: fixed ;
+    background-attachment: fixed;
 }
 
 /*--------------------------------------------------
@@ -651,13 +674,16 @@ section avis clients
     h3 {
         color: #33664F;
     }
+    h4{
+        font-size: 13px;
+    }
 }
 
 .avisClient {
     padding: 20px;
 }
 
-.imgAvis{
+.imgAvis {
     width: 128px;
     height: 148px;
     object-fit: cover;
@@ -740,4 +766,7 @@ footer {
 /*--------------------------------------------------
 en cours de test
 ---------------------------------------------------*/
+
+
+
 
